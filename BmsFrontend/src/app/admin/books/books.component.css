@@ -1,0 +1,25 @@
+.jumbotron{
+  width: 350px;
+  padding-top: 35px;
+  margin: 50px auto;
+  text-align: center;
+  height: 200px;
+  position: absolute;
+  left: 100px;
+  background: url(/assets/2.jpeg);
+}
+h3{
+    margin-bottom: 20px;
+}
+a{
+    margin-bottom: 15px;
+}
+.display{
+  position: absolute;
+  left: 100px;
+  top: 350px;
+}
+.addForm{
+  position: absolute;
+  right: 100px;
+}

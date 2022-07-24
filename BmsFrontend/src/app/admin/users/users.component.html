@@ -1,0 +1,33 @@
+<main class="container" role="main">
+  <div class="jumbotron">
+    <h3>Users - Admin access</h3>
+    <a role="button" class="btn btn-outline-primary" (click)="addUser()">Add user</a><br>
+    <a routerLink="/admin/books" class="btn btn-outline-primary" role="button" aria-pressed="true">Add New Book</a>  
+  </div>
+  <div class="container row display">
+    <div class="col-md-6">
+    <table class="table table-bordered text-center">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users" >
+        <td >{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td><button type="button" class="btn btn-info" (click)="viewUser(user.id)">Show Details</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="col-md-6 addForm">
+  <app-adduser *ngIf="action === 'add'"  [user]="selectedUser"  (userAddedEvent)="refreshData()"></app-adduser>
+</div>
+<div>
+  <app-viewuser *ngIf="action === 'view'" [user]="selectedUser" (userDeletedEvent)="refreshData()"></app-viewuser>
+</div>
+</main>

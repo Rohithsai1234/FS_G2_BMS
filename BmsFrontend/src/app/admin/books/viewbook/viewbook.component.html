@@ -1,0 +1,27 @@
+<div class="bookDetails">
+    <h2>Book Details</h2>
+    <table class="table table-bordered text-center">
+        <thead class="table-dark">
+            <tr>
+              <th>Book Id</th>
+              <th>Book Name</th>
+              <th>Book Author</th>
+              <th>Book Price</th>
+              <th>Book Image</th>
+            </tr>
+          </thead>
+        <tbody>
+            <tr>
+                <td>{{book.id}}</td>
+                <td>{{book.name}}</td>
+                <th>{{book.author}}</th>
+                <th>{{book.price}}</th>
+                <th>
+                    <img  src="{{book.retrievedImage}}" height="100" width="100">
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-small btn-warning" (click)="editBook()">Edit</a> &nbsp;
+    <a class="btn btn-small btn-danger" (click)="deleteBook()">Delete</a>
+</div>

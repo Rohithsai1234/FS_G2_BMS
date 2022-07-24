@@ -1,0 +1,15 @@
+.modal-body{
+    width: 350px;
+    position: relative;
+    bottom: 250px;
+    left: 300px;
+    z-index: 1;
+    background: url(/assets/2.jpeg);
+}
+
+.savenutton{
+    position:center;
+}
+h1{
+    text-align: center;
+}

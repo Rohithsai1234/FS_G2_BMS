@@ -1,0 +1,11 @@
+table, th, td {
+    padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.userDetails{
+	position: relative;
+	left: 600px;
+	top: 40px;
+	width: 50%;
+}

@@ -1,0 +1,10 @@
+table, th, td {
+    padding: 10px;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+.bookDetails{
+	position: relative;
+	left: 300px;
+	bottom: 250px;
+}

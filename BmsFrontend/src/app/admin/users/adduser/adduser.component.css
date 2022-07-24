@@ -1,0 +1,12 @@
+.jumbotron{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    width: 350px;
+    background: url(/assets/2.jpeg);
+    
+
+}
+h1{
+    text-align: center;
+}
